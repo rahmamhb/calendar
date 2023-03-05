@@ -1,0 +1,79 @@
+html {
+    height: 100%;
+}
+body {
+    background-image: linear-gradient(to bottom right , #DDD6F3 , #FAACA8);
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: sans-serif;
+}
+
+#container{
+    color: white;
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+    margin-left: 40%;
+    
+    height: 350px;
+    width: 290px;
+    padding: 5px;
+    
+    background-color: #555;
+    border: solid 1px rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(25px);
+
+}
+#monthYear{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 5px;
+    justify-content: center;
+    gap: 40px;
+}
+#dateText{
+    padding: 13px 0;
+    text-align: center;
+}
+#week{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;  
+    gap: 5px;
+}
+#weekDays , #leftarrow , #rightarrow{ 
+    font-size: 15px;
+    font-weight: bold;
+    height: 13px;
+    width: 35px;
+    padding: 13px 0;
+    background-image: linear-gradient(to bottom right , rgba(102, 102, 102, 0) , rgba(255, 255, 255, 0));
+    border: solid 0.3px rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(25px);
+    border-radius: 5px;
+    text-align: center;
+    transition: all ease-in-out 0.3s;
+}
+#weekDays:hover , #leftarrow:hover , #rightarrow:hover , #days span:hover{
+    background-color: white;
+    color: #707070;
+}
+#days{
+    display: grid;
+    grid-template-columns:auto auto auto auto auto auto auto ;
+    grid-template-rows:auto auto auto auto auto auto  ;
+}
+#days span{
+    font-size: 15px;
+    font-weight: bold;
+    height: 13px;
+    width: 35px;
+    padding: 13px 0;
+    border-radius: 5px;
+    text-align: center;
+    transition: all ease-in-out 0.1s;
+}
