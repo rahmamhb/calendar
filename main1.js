@@ -8,7 +8,7 @@ let dateSpan = document.createElement("span");
 //*********************** VAR PART **********************/
 let myDate = new Date();
 let monthArray = ["January","Fabruary","Mars","April","May","June","July","Augest","september","October","November","december"];
-let dayArray = ["S","M","T","W","T","F","S"]
+let dayArray = ["S","Mdex","T","W","T","F","S"]
 
 /*****************************setting things done for current month */
 monthYearText.textContent = `${monthArray[myDate.getMonth()]} ${myDate.getFullYear()}`;
@@ -104,8 +104,7 @@ rightArrow.addEventListener("click",()=>{
   daysDiv.childNodes.item(0).style.gridColumnStart = `${fDay+1}`;
 })
 /****************************PART FO DISPLAYING THE DAY OF EACH MONTH**************************/
-/*
-//console.log(myDate.getDay()); returns 3
-//console.log(myDate.getDate()) retruns 17
-//console.log(myDate.getMonth()) returns 7
-//console.log(myDate.getFullYear()); returns 2022*/
+console.log(myDate.getDay()); //returns 3
+console.log(myDate.getDate()) //retruns 17
+console.log(myDate.getMonth()) //returns 7
+console.log(myDate.getFullYear()); //returns 2022
